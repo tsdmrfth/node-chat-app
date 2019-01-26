@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server/src/server.js",
+    "start": "nodemon server/src/server.js",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
   },
   "engines": {
     "node": "8.12.0"
